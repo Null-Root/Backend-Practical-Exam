@@ -15,7 +15,6 @@
     "password": <string>
   }
 ```
----
 #### Successful Response:
 Status Code: ```201 Created```
 ```
@@ -23,7 +22,6 @@ Status Code: ```201 Created```
   "message": "User successfully registered"
 }
 ```
----
 #### Failed Response (Email Already Taken):
 Status Code: ```400 Bad Request```
 ```
@@ -32,8 +30,6 @@ Status Code: ```400 Bad Request```
 }
 ```
 
----
----
 ---
 
 ### Login Existing User
@@ -48,7 +44,6 @@ Status Code: ```400 Bad Request```
     "password": <string>
   }
 ```
----
 #### Successful Response
 Status Code: ```201 Created```
 ```
@@ -56,8 +51,7 @@ Status Code: ```201 Created```
   "access_token": <token>
 }
 ```
----
-#### Failed Response (Email Already Taken):
+#### Failed Response (Invalid Credentials):
 Status Code: ```401 Unauthorized```
 ```
 {
@@ -65,8 +59,6 @@ Status Code: ```401 Unauthorized```
 }
 ```
 
----
----
 ---
 
 ### Place an Order
@@ -82,7 +74,6 @@ Status Code: ```401 Unauthorized```
     "quantity": <string>
   }
 ```
----
 #### Successful Response:
 Status Code: ```201 Created```
 ```
@@ -90,8 +81,7 @@ Status Code: ```201 Created```
   "message": "You have successfully ordered this product"
 }
 ```
----
-##### Failed Response (Invalid Credentials):
+##### Failed Response (Not Enough Stock):
 Status Code: ```400 Bad Request```
 ```
 {
