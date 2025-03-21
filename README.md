@@ -5,7 +5,7 @@
 
 ### Register New User
 
-```http
+```
   POST /register
   Host: localhost:8080
   Content-Type: application/json
@@ -38,7 +38,7 @@ Status Code: ```400 Bad Request```
 
 ### Login Existing User
 
-```http
+```
   POST /login
   Host: localhost:8080
   Content-Type: application/json
@@ -71,7 +71,7 @@ Status Code: ```401 Unauthorized```
 
 ### Place an Order
 
-```http
+```
   POST /order
   Host: localhost:8080
   Content-Type: application/json
